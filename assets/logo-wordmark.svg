@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3060" height="1160" viewBox="-10 -10 306 116"><defs>
+<linearGradient id="zinc" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="96">
+  <stop offset="0" stop-color="#F5F9FC"/><stop offset=".55" stop-color="#BAC5D1"/><stop offset="1" stop-color="#7B8896"/>
+</linearGradient>
+<linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#19E3FF"/><stop offset="1" stop-color="#FF2E88"/>
+</linearGradient>
+<linearGradient id="bgg" x1="0" y1="0" x2="1" y2="1">
+  <stop offset="0" stop-color="#06080C"/><stop offset="1" stop-color="#101722"/>
+</linearGradient>
+<radialGradient id="glowc"><stop offset="0" stop-color="#19E3FF" stop-opacity=".28"/><stop offset="1" stop-color="#19E3FF" stop-opacity="0"/></radialGradient>
+<radialGradient id="glowm"><stop offset="0" stop-color="#FF2E88" stop-opacity=".22"/><stop offset="1" stop-color="#FF2E88" stop-opacity="0"/></radialGradient>
+<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse"><rect width="4" height="1.4" fill="#000" opacity=".16"/></pattern>
+<clipPath id="zclip"><rect x="-20" y="-10" width="140" height="50"/><rect x="-20" y="50" width="140" height="60"/></clipPath>
+<clipPath id="zband"><rect x="-20" y="40" width="140" height="10"/></clipPath>
+<clipPath id="kclip"><rect x="0" y="0" width="78" height="96"/></clipPath>
+<g id="Zshape"><rect x="0" y="0" width="64" height="16"/><rect x="0" y="80" width="64" height="16"/><polygon points="46,8 64,8 18,88 0,88"/></g>
+<g id="Bshape"><path d="M18 0 H34 V96 H18 V26 L0 40 V22 Z"/><rect x="0" y="80" width="52" height="16"/></g>
+<g id="Zfx">
+  <g transform="translate(-3 0)" fill="#FF2E88" opacity=".9"><use xlink:href="#Zshape"/></g>
+  <g transform="translate(3 0)" fill="#19E3FF" opacity=".9"><use xlink:href="#Zshape"/></g>
+  <g clip-path="url(#zclip)" fill="url(#zinc)"><use xlink:href="#Zshape"/></g>
+  <g clip-path="url(#zband)"><g transform="translate(9 0)" fill="url(#zinc)"><use xlink:href="#Zshape"/></g></g>
+</g>
+<g id="Bfx">
+  <g transform="translate(3 0)" fill="#FF2E88" opacity=".9"><use xlink:href="#Bshape"/></g>
+  <g fill="#19E3FF"><use xlink:href="#Bshape"/></g>
+</g>
+<g id="wm">
+  <use xlink:href="#Zfx"/>
+  <g transform="translate(76 0)"><use xlink:href="#Bfx"/></g>
+  <g transform="translate(140 0)" fill="url(#zinc)"><path d="M0 32 H40 L56 48 V96 H40 V48 H16 V96 H0 Z"/></g>
+  <g transform="translate(208 0)"><g clip-path="url(#kclip)">
+    <rect x="0" y="0" width="16" height="96" fill="url(#zinc)"/>
+    <line x1="8" y1="58" x2="90" y2="-24" stroke="url(#zinc)" stroke-width="17"/>
+    <line x1="8" y1="58" x2="90" y2="140" stroke="url(#zinc)" stroke-width="17"/>
+  </g></g>
+</g>
+<g id="mark">
+  <polygon points="0,-96 83.1,-48 83.1,48 0,96 -83.1,48 -83.1,-48" fill="#0B1017" stroke="url(#edge)" stroke-width="7"/>
+  <polygon points="0,-80 69.3,-40 69.3,40 0,80 -69.3,40 -69.3,-40" fill="none" stroke="#1E2A3B" stroke-width="2"/>
+  <g transform="translate(-44.8 -33.6) scale(.7)"><use xlink:href="#Zfx"/><g transform="translate(76 0)"><use xlink:href="#Bfx"/></g></g>
+</g>
+</defs><use xlink:href="#wm" x="0" y="0"/></svg>
